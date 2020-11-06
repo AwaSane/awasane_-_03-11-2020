@@ -1,0 +1,24 @@
+@mixin linear-gradient-btn {
+    background-image: linear-gradient(
+            to top left,
+            $primarycolor,
+            $secondarycolor);
+            padding: 15px;
+            padding-right: 20px;
+            padding-left: 20px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 3px 10px  #dbdbdb;
+    outline: none;
+}
+
+@mixin principal-btn {
+    background-color: $primarycolor;
+    padding: 15px;
+            padding-right: 20px;
+            padding-left: 20px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 3px 10px  #dbdbdb;
+    outline: none;
+}
