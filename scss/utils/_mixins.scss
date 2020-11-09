@@ -8,26 +8,7 @@
             padding-left: 20px;
     border-radius: 50px;
     border: none;
-    box-shadow: 0 3px 10px  #dbdbdb;
+    box-shadow: 0 3px 10px  #cacaca;
     outline: none;
 }
 
-@mixin linear-gradient-btn--P2 {
-    background-image: linear-gradient(
-            to top left,
-            $primarycolor,
-            $secondarycolor);
-    border-radius: 50px;
-    border: none;
-    box-shadow: 0 3px 10px  #dbdbdb;
-    outline: none;
-    padding-left: 43px;
-	padding-right: 43px;
-	text-decoration: none;
-	color: white;
-    font-weight: 600;
-    cursor: pointer;
-    margin-left: 104px;
-    margin-top: 30px;
-    margin-bottom: 35px;
-}

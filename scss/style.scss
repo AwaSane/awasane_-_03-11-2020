@@ -88,6 +88,12 @@ header
 	color: white;
     font-weight: 600;
     cursor: pointer;
+    transition-duration: 0.6s;
+    &:hover{
+        opacity: 0.90;
+        box-shadow: 0 3px 10px  #9b9b9b;
+        transition-duration: 0.6s;
+    }
 }
 
 /* Deuxième section */
@@ -367,20 +373,26 @@ footer
 	justify-content: space-between;
 }
 
-
+.form--btn{
+    text-align: center;
+}
 
 .P2--section1--btn
 {
-    @include linear-gradient-btn--P2 ;
-    padding: 15px;
-	padding-left: 43px;
-	padding-right: 43px;
+    @include linear-gradient-btn;
 	text-decoration: none;
 	color: white;
     font-weight: 600;
     cursor: pointer;
-    margin-left: 104px;
+    padding-left: 40px;
+    padding-right: 40px;
     margin-top: 30px;
     margin-bottom: 35px;
+    transition-duration: 0.6s;
+    &:hover{
+        opacity: 0.90;
+        box-shadow: 0 3px 10px  #9b9b9b;
+        transition-duration: 0.6s;
+    }
 
 }

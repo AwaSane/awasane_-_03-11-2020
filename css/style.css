@@ -73,12 +73,18 @@ header {
   padding-left: 20px;
   border-radius: 50px;
   border: none;
-  box-shadow: 0 3px 10px #dbdbdb;
+  box-shadow: 0 3px 10px #cacaca;
   outline: none;
   text-decoration: none;
   color: white;
   font-weight: 600;
   cursor: pointer;
+  transition-duration: 0.6s;
+}
+.Accueilsection1--btn:hover {
+  opacity: 0.9;
+  box-shadow: 0 3px 10px #9b9b9b;
+  transition-duration: 0.6s;
 }
 
 /* Deuxième section */
@@ -309,31 +315,33 @@ footer {
   justify-content: space-between;
 }
 
+.form--btn {
+  text-align: center;
+}
+
 .P2--section1--btn {
   background-image: linear-gradient(to top left, #9356DC, #FF79DA);
+  padding: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
   border-radius: 50px;
   border: none;
-  box-shadow: 0 3px 10px #dbdbdb;
+  box-shadow: 0 3px 10px #cacaca;
   outline: none;
-  padding-left: 43px;
-  padding-right: 43px;
   text-decoration: none;
   color: white;
   font-weight: 600;
   cursor: pointer;
-  margin-left: 104px;
+  padding-left: 40px;
+  padding-right: 40px;
   margin-top: 30px;
   margin-bottom: 35px;
-  padding: 15px;
-  padding-left: 43px;
-  padding-right: 43px;
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-  cursor: pointer;
-  margin-left: 104px;
-  margin-top: 30px;
-  margin-bottom: 35px;
+  transition-duration: 0.6s;
+}
+.P2--section1--btn:hover {
+  opacity: 0.9;
+  box-shadow: 0 3px 10px #9b9b9b;
+  transition-duration: 0.6s;
 }
 
 /*# sourceMappingURL=style.css.map */
