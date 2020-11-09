@@ -7,12 +7,14 @@ html {
 
 body {
   flex-wrap: wrap;
-  display: flex;
+  display: block;
   justify-content: center;
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
+}
+
+.container {
+  box-sizing: border-box;
 }
 
 /*En-tête*/
@@ -65,21 +67,6 @@ header {
 }
 
 .Accueilsection1--btn {
-  background-color: #9356DC;
-  padding: 15px;
-  padding-right: 20px;
-  padding-left: 20px;
-  border-radius: 50px;
-  border: none;
-  box-shadow: 0 3px 10px #dbdbdb;
-  outline: none;
-}
-.Accueilsection1--btn a {
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-}
-.Accueilsection1--btn:hover {
   background-image: linear-gradient(to top left, #9356DC, #FF79DA);
   padding: 15px;
   padding-right: 20px;
@@ -88,12 +75,15 @@ header {
   border: none;
   box-shadow: 0 3px 10px #dbdbdb;
   outline: none;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 /* Deuxième section */
 .Accueilsection2 {
-  height: 400px;
-  width: 100%;
+  height: 355px;
   padding: 20px;
 }
 .Accueilsection2 h1 {
@@ -148,21 +138,18 @@ header {
 .Accueilsection3 {
   display: block;
   background-color: #f2f2f2;
-  width: 100%;
   padding: 20px;
   padding-top: 30px;
 }
 
-.Accueilsection3--Menilmontantimage, .Accueilsection3--Charonneimage,
-.Accueilsection3--Foliemericourtimage, .Accueilsection3--Citérougeimage {
+.Accueilsection3--Menilmontantimage, .Accueilsection3--Charonneimage, .Accueilsection3--Foliemericourtimage, .Accueilsection3--Citérougeimage {
   width: 335px;
   height: 171px;
   margin-bottom: 10px;
   border-radius: 15px 15px 0 0;
 }
 
-.Accueilsection3--Menilmontantitems, .Accueilsection3--Charonneitems,
-.Accueilsection3--Foliemericourtitems, .Accueilsection3--Citerougeitems {
+.Accueilsection3--Menilmontantitems, .Accueilsection3--Charonneitems, .Accueilsection3--Foliemericourtitems, .Accueilsection3--Citerougeitems {
   border: 0 #ffffff solid;
   background-color: white;
   border-radius: 15px;
@@ -170,8 +157,7 @@ header {
   margin-bottom: 15px;
   box-shadow: 0 3px 10px #dbdbdb;
 }
-.Accueilsection3--Menilmontantitems a, .Accueilsection3--Charonneitems a,
-.Accueilsection3--Foliemericourtitems a, .Accueilsection3--Citerougeitems a {
+.Accueilsection3--Menilmontantitems a, .Accueilsection3--Charonneitems a, .Accueilsection3--Foliemericourtitems a, .Accueilsection3--Citerougeitems a {
   text-decoration: none;
   color: black;
 }
@@ -205,7 +191,7 @@ header {
 /* Footer */
 footer {
   background-color: #303030;
-  width: 100%;
+  padding-top: 25px;
   padding-left: 25px;
   padding-bottom: 25px;
 }
@@ -218,6 +204,7 @@ footer {
   font-family: "Shrikhand";
   color: #ffffff;
   font-size: x-large;
+  margin-top: 0;
 }
 
 .fa-utensils {
@@ -228,6 +215,125 @@ footer {
 .fa-hands-helping {
   margin-right: 10px;
   font-size: 13px;
+}
+
+/*PAGE N°2*/
+.container--P2 {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.headerP2 {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  padding-bottom: 15px;
+}
+.headerP2 .fa-arrow-left {
+  margin-right: 60px;
+  font-size: x-large;
+  color: #303030;
+}
+.headerP2 .header--logop2 {
+  font-family: "Shrikhand";
+}
+.headerP2 .header--logop2 h1 {
+  margin: 0;
+}
+
+.P2--MenilmontantP2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.P2--section1 {
+  background-color: #f2f2f2;
+  border-radius: 55px 55px 0 0;
+  margin-top: -100px;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 2;
+}
+.P2--section1 .P2--section1--restaurantname {
+  justify-content: space-between;
+  font-family: "Shrikhand";
+  font-size: 28px;
+  margin-left: 18px;
+  padding-top: 30px;
+}
+.P2--section1 .P2--section1--restaurantname .fa-heart {
+  font-size: x-large;
+  margin-top: 8px;
+  position: absolute;
+  right: 40px;
+}
+.P2--section1 .P2--section1--titlemenu {
+  border-bottom: 3px #99E2D0 solid;
+  padding-bottom: 5px;
+  width: 40px;
+  margin-left: 18px;
+  padding-top: 20px;
+}
+
+.P2--section1--menu {
+  display: block;
+  margin-bottom: 15px;
+  margin: 13px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px #dbdbdb;
+}
+.P2--section1--menu h3 {
+  margin: 0;
+  margin-left: 0.5px;
+  margin-bottom: 3px;
+}
+.P2--section1--menu p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 15.5px;
+  padding-right: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.P2--section1--menu span {
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.P2--section1--price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.P2--section1--btn {
+  background-image: linear-gradient(to top left, #9356DC, #FF79DA);
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0 3px 10px #dbdbdb;
+  outline: none;
+  padding-left: 43px;
+  padding-right: 43px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 104px;
+  margin-top: 30px;
+  margin-bottom: 35px;
+  padding: 15px;
+  padding-left: 43px;
+  padding-right: 43px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 104px;
+  margin-top: 30px;
+  margin-bottom: 35px;
 }
 
 /*# sourceMappingURL=style.css.map */

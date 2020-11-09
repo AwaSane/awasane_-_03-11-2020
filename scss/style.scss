@@ -3,209 +3,384 @@
 @import'./utils/mixins';
 
 /*Body*/
-html{
-    font-family: 'Roboto', sans-serif;
+
+html
+{
+	font-family: 'Roboto', sans-serif;
 }
-body{
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;  
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+
+body
+{
+	flex-wrap: wrap;
+	display: block;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+
+.container
+{
+	box-sizing: border-box;
 }
 
 /*En-tête*/
-header{
-    width: 100%;
-   text-align: center;
-}
-.fixedlogo{
-    background-color: white;
-    padding: 10px;
-    position: sticky;
-    .header--logo{
-    margin-top: 10px;
-    width: 186px;
-    height: 34px;
-    }
+header
+{
+	width: 100%;
+	text-align: center;
 }
 
-.mapmarker p{
-    font-weight: 400;
-    font-size: large;
-    padding-top:10px;
-    background-color:#e6e6e6;
-    height: 35px;
-    margin: 0;
-     
+.fixedlogo
+{
+	background-color: white;
+	padding: 10px;
+	position: sticky;
+	.header--logo
+	{
+		margin-top: 10px;
+		width: 186px;
+		height: 34px;
+	}
 }
-.fa-map-marker-alt{
-    padding-right: 15px;
+
+.mapmarker p
+{
+	font-weight: 400;
+	font-size: large;
+	padding-top:10px;
+	background-color:#e6e6e6;
+	height: 35px;
+	margin: 0;
 }
+
+.fa-map-marker-alt
+{
+	padding-right: 15px;
+}
+
 /* Première section */
-.Accueilsection1{
-   text-align: center;
-   background-color: #f2f2f2;
-   height: 270px;
-   h1{
-       width: 70%;
-       margin: auto;
-       padding-top: 30px;
-   }
-   p{
-       width: 96%;
-       margin: auto;
-       padding-top: 10px;
-       padding-bottom: 40px;
-       color: #525252;
-   }
+.Accueilsection1
+{
+	text-align: center;
+	background-color: #f2f2f2;
+	height: 270px;
+	h1
+	{
+		width: 70%;
+		margin: auto;
+		padding-top: 30px;
+	}
+
+	p
+	{
+		width: 96%;
+		margin: auto;
+		padding-top: 10px;
+		padding-bottom: 40px;
+		color: #525252;
+	}
 }
-.Accueilsection1--btn{
-    
-    @include principal-btn;
-    a{  
-    text-decoration: none;
-    color: white;
+
+.Accueilsection1--btn
+{
+	@include linear-gradient-btn;
+	text-decoration: none;
+	color: white;
     font-weight: 600;
-    }
-
-    &:hover {
-        @include linear-gradient-btn ;
-    }
+    cursor: pointer;
 }
+
 /* Deuxième section */
-.Accueilsection2{
-    height: 400px;
-    width: 100%;
-    padding: 20px;
-    h1{
-        margin-left: 0;
-    }
-    .Accueilsection2--option{
-        display: flex;
-         margin-left: 5px;
-         margin-bottom: 20px;
-        padding-left: 30px;
-        background-color: #f2f2f2;
-        border-radius: 20px;
-        border-top: 10px #f2f2f2 solid;
-        border-bottom: 10px #f2f2f2 solid;
-        box-shadow: 0 3px 10px  #dbdbdb;
-    p{    
-            font-weight: 500;  
-        }
-    }
-   h6{
-       color: white;
-       background-color: $primarycolor;
-       border-radius: 100%;
-       padding-left: 8px;
-       padding-right: 8px;
-       padding-top: 5px;
-       padding-bottom: 5px;
-       position: absolute;left: 15px;
-       margin-top: 15px;
-   }
+.Accueilsection2
+{
+	height: 355px;
+	padding: 20px;
+	h1
+	{
+		margin-left: 0;
+	}
+
+	.Accueilsection2--option
+	{
+		display: flex;
+		margin-left: 5px;
+		margin-bottom: 20px;
+		padding-left: 30px;
+		background-color: #f2f2f2;
+		border-radius: 20px;
+		border-top: 10px #f2f2f2 solid;
+		border-bottom: 10px #f2f2f2 solid;
+		box-shadow: 0 3px 10px  #dbdbdb;
+		p
+		{
+			font-weight: 500;
+		}
+
+	}
+
+	h6
+	{
+		color: white;
+		background-color: $primarycolor;
+		border-radius: 100%;
+		padding-left: 8px;
+		padding-right: 8px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		position: absolute;
+		left: 15px;
+		margin-top: 15px;
+	}
 }
 
-
-.fa-mobile-alt{
-    color: grey;
-    padding-right:28px ;
-    font-size: large;
+.fa-mobile-alt
+{
+	color: grey;
+	padding-right:28px ;
+	font-size: large;
 }
 
-.fa-bars{
-    color: grey;
-    padding-right:25px ;
-    font-size: large;
+.fa-bars
+{
+	color: grey;
+	padding-right:25px ;
+	font-size: large;
 }
-.fa-store{
-    color: grey;
-    padding-right:20px ;
-    font-size: large;
+
+.fa-store
+{
+	color: grey;
+	padding-right:20px ;
+	font-size: large;
 }
 
 /* Troisième section */
-.Accueilsection3{
-    display: block;
-    background-color: #f2f2f2;
-   width: 100%;
-   padding: 20px;
-   padding-top: 30px;
-}
-.Accueilsection3--Menilmontantimage,.Accueilsection3--Charonneimage,
-.Accueilsection3--Foliemericourtimage,.Accueilsection3--Citérougeimage{
-    width: 335px;
-    height: 171px;
-    margin-bottom: 10px;
-    border-radius: 15px 15px 0 0;
-
-}
-.Accueilsection3--Menilmontantitems,.Accueilsection3--Charonneitems,
-.Accueilsection3--Foliemericourtitems,.Accueilsection3--Citerougeitems{
-    border:0 #ffffff solid;
-    background-color: white;
-    border-radius: 15px ;
-    height: 240px;
-    margin-bottom: 15px;
-    box-shadow: 0 3px 10px  #dbdbdb;
-    a{
-        text-decoration: none;
-        color: black;
-    }
+.Accueilsection3
+{
+	display: block;
+	background-color: #f2f2f2;
+	padding: 20px;
+	padding-top: 30px;
 }
 
-.Accueilsection3-texte{
-    h3,p{
-        margin:0;
-        margin-left: 10px;
-    }
-p{
-    font-size: 17.5px;
-}
-}
-.Accueilsection3--Nouveau{
-    position: absolute;right:33px;
-    background-color: $tertiarycolor;
-    border-radius: 2px;
-    padding: 7px 13px;
-    font-size: small;
-    color: #158c6e;
-    font-weight: 500;
+.Accueilsection3--Menilmontantimage,.Accueilsection3--Charonneimage,.Accueilsection3--Foliemericourtimage,.Accueilsection3--Citérougeimage
+{
+	width: 335px;
+	height: 171px;
+	margin-bottom: 10px;
+	border-radius: 15px 15px 0 0;
 }
 
-.fa-heart{
-    position: absolute;right: 50px;
-    font-size: x-large;
-    margin-top: 5px;
-    
+.Accueilsection3--Menilmontantitems,.Accueilsection3--Charonneitems,.Accueilsection3--Foliemericourtitems,.Accueilsection3--Citerougeitems
+{
+	border:0 #ffffff solid;
+	background-color: white;
+	border-radius: 15px ;
+	height: 240px;
+	margin-bottom: 15px;
+	box-shadow: 0 3px 10px  #dbdbdb;
+	a
+	{
+		text-decoration: none;
+		color: black;
+	}
+}
+
+.Accueilsection3-texte
+{
+	h3,p
+	{
+		margin:0;
+		margin-left: 10px;
+	}
+
+	p
+	{
+		font-size: 17.5px;
+	}
+}
+
+.Accueilsection3--Nouveau
+{
+	position: absolute;
+	right:33px;
+	background-color: $tertiarycolor;
+	border-radius: 2px;
+	padding: 7px 13px;
+	font-size: small;
+	color: #158c6e;
+	font-weight: 500;
+}
+
+.fa-heart
+{
+	position: absolute;
+	right: 50px;
+	font-size: x-large;
+	margin-top: 5px;
 }
 
 /* Footer */
-footer{
-    
-    background-color: #303030;
-    width: 100%;
-    padding-left: 25px;
-    padding-bottom: 25px;
-}
-.footeritems{
-    color: #ffffff;
-}
-.footer--logo{
-font-family:'Shrikhand';
-color: #ffffff;
-font-size: x-large;
+footer
+{
+	background-color: #303030;
+    padding-top: 25px;
+	padding-left: 25px;
+	padding-bottom: 25px;
 }
 
-.fa-utensils {
-    margin-right: 14px;
-    font-size: 17px;
+.footeritems
+{
+	color: #ffffff;
 }
-.fa-hands-helping{
-    margin-right: 10px;
-    font-size: 13px;
+
+.footer--logo
+{
+	font-family:'Shrikhand';
+	color: #ffffff;
+    font-size: x-large;
+    margin-top: 0;
+}
+
+.fa-utensils
+{
+	margin-right: 14px;
+	font-size: 17px;
+}
+
+.fa-hands-helping
+{
+	margin-right: 10px;
+	font-size: 13px;
+}
+
+/*PAGE N°2*/
+.container--P2
+{
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.headerP2
+{
+	display: flex;
+	align-items: center;
+	padding: 25px;
+	padding-bottom: 15px;
+	.fa-arrow-left
+	{
+		margin-right: 60px;
+		font-size: x-large;
+		color:  #303030;
+	}
+
+	.header--logop2
+	{
+		font-family: 'Shrikhand';
+		h1
+		{
+			margin: 0;
+		}
+
+	}
+}
+
+.P2--MenilmontantP2
+{
+	width: 100%;
+    height: 100%;
+    position:relative;
+    z-index:1;
+}
+
+.P2--section1
+{
+	background-color: #f2f2f2;
+    border-radius: 55px 55px 0 0;
+    margin-top: -100px;
+    padding-bottom: 30px;
+    position:relative;
+    z-index:2;
+    
+	.P2--section1--restaurantname
+	{   
+        justify-content: space-between;
+        font-family:'Shrikhand';
+        font-size: 28px;
+		margin-left: 18px;
+        padding-top: 30px;
+        .fa-heart{
+            font-size: x-large;
+            margin-top: 8px;
+            position: absolute;right: 40px;
+        }
+	}
+
+	.P2--section1--titlemenu
+	{
+		border-bottom: 3px #99E2D0 solid;
+		padding-bottom: 5px;
+		width: 40px;
+		margin-left: 18px;
+		padding-top: 20px;
+	}
+
+}
+
+.P2--section1--menu
+{
+	display: block;
+	margin-bottom: 15px;
+	margin: 13px;
+	padding: 10px;
+	background-color: #ffffff;
+	border-radius: 15px;
+	box-shadow: 0 3px 10px  #dbdbdb;
+	h3
+	{
+		margin: 0;
+		margin-left: 0.5px;
+		margin-bottom: 3px;
+	}
+
+	p
+	{
+		margin: 0;
+		font-weight: 300;
+		font-size: 15.5px;
+        padding-right: 5px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+	}
+
+	span
+	{
+		font-weight: bold;
+		padding-right: 10px;
+	}
+
+}
+
+.P2--section1--price
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+.P2--section1--btn
+{
+    @include linear-gradient-btn--P2 ;
+    padding: 15px;
+	padding-left: 43px;
+	padding-right: 43px;
+	text-decoration: none;
+	color: white;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 104px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+
 }
