@@ -386,9 +386,13 @@ footer
 }
 .P2--section1--menu_c{
     animation-name: menu;
-    animation: menu 2s ;
-    
+    animation: menu 2s ; 
 }
+.P2--section1--menu_c{
+    animation-name: menu;
+    animation: menu 2.5s ; 
+}
+
 
 @keyframes menu {
     from {
