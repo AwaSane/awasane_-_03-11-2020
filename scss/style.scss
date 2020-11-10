@@ -6,7 +6,8 @@
 
 html
 {
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 body
@@ -15,12 +16,13 @@ body
 	display: block;
 	justify-content: center;
 	margin: 0;
-	padding: 0;
+    padding: 0;
+
 }
 
 .container
-{
-	box-sizing: border-box;
+{  
+    box-sizing: border-box;
 }
 
 /*En-tête*/
@@ -34,7 +36,6 @@ header
 {
 	background-color: white;
 	padding: 10px;
-	position: sticky;
 	.header--logo
 	{
 		margin-top: 10px;
@@ -223,7 +224,15 @@ header
 	position: absolute;
 	right: 50px;
 	font-size: x-large;
-	margin-top: 5px;
+    margin-top: 5px;
+    -webkit-text-stroke: 1px white;
+&:hover{
+    background: linear-gradient(
+        to bottom,
+        $primarycolor,
+        $secondarycolor
+    );
+}
 }
 
 /* Footer */
@@ -328,7 +337,7 @@ footer
 		padding-bottom: 5px;
 		width: 40px;
 		margin-left: 18px;
-		padding-top: 20px;
+        padding-top: 20px;
 	}
 
 }
@@ -341,7 +350,7 @@ footer
 	padding: 10px;
 	background-color: #ffffff;
 	border-radius: 15px;
-	box-shadow: 0 3px 10px  #dbdbdb;
+    box-shadow: 0 3px 10px  #dbdbdb;
 	h3
 	{
 		margin: 0;
@@ -364,6 +373,32 @@ footer
 		font-weight: bold;
 		padding-right: 10px;
 	}
+
+}
+
+.P2--section1--menu_a{
+    animation-name: menu;
+    animation: menu 1s;
+}
+.P2--section1--menu_b{
+    animation-name: menu;
+    animation: menu 1.5s;
+}
+.P2--section1--menu_c{
+    animation-name: menu;
+    animation: menu 2s ;
+    
+}
+
+@keyframes menu {
+    from {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+     to {
+        transform: translateY(0);
+        opacity: 1;
+     }
 
 }
 

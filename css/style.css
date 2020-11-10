@@ -26,7 +26,6 @@ header {
 .fixedlogo {
   background-color: white;
   padding: 10px;
-  position: sticky;
 }
 .fixedlogo .header--logo {
   margin-top: 10px;
@@ -192,6 +191,10 @@ header {
   right: 50px;
   font-size: x-large;
   margin-top: 5px;
+  -webkit-text-stroke: 1px white;
+}
+.fa-heart:hover {
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
 }
 
 /* Footer */
@@ -310,6 +313,31 @@ footer {
   padding-right: 10px;
 }
 
+.P2--section1--menu_a {
+  animation-name: menu;
+  animation: menu 1s;
+}
+
+.P2--section1--menu_b {
+  animation-name: menu;
+  animation: menu 1.5s;
+}
+
+.P2--section1--menu_c {
+  animation-name: menu;
+  animation: menu 2s;
+}
+
+@keyframes menu {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .P2--section1--price {
   display: flex;
   justify-content: space-between;
