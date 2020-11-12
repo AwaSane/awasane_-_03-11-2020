@@ -4,14 +4,9 @@
 
 /*Body*/
 
-html
-{
-    font-family: 'Roboto', sans-serif;
-    
-}
 
 body
-{
+{font-family: 'Roboto', sans-serif;
 	flex-wrap: wrap;
 	display: block;
 	justify-content: center;
@@ -172,7 +167,7 @@ header
 
 .Accueilsection3--Menilmontantimage,.Accueilsection3--Charonneimage,.Accueilsection3--Foliemericourtimage,.Accueilsection3--Citérougeimage
 {
-	width: 335px;
+	width: 100%;
 	height: 171px;
 	margin-bottom: 10px;
 	border-radius: 15px 15px 0 0;
@@ -182,7 +177,7 @@ header
 {
 	border:0 #ffffff solid;
 	background-color: white;
-	border-radius: 15px ;
+    border-radius: 15px ;
 	height: 240px;
 	margin-bottom: 15px;
 	box-shadow: 0 3px 10px  #dbdbdb;
@@ -344,37 +339,81 @@ footer
 
 .P2--section1--menu
 {
-	display: block;
+    display: flex;
 	margin-bottom: 15px;
 	margin: 13px;
-	padding: 10px;
 	background-color: #ffffff;
 	border-radius: 15px;
     box-shadow: 0 3px 10px  #dbdbdb;
+    justify-content: space-between;
+    
+    .P2--section1--menu_check{
+        &:hover{
+            background-color: $tertiarycolor;
+            height: 100%;
+            margin-right: -3px;
+            padding: 20px;
+            padding-top: 0;
+            padding-bottom: 0;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .fa-check-circle{
+            background-color: transparent;
+            margin: 10px;
+            
+            text-align: center;
+            align-items: center;
+            margin-top: 25px;
+            color: white;
+            font-size: large;
+            transition: transform 400ms ease-in-out;
+            transform: rotate(0) ;
+             transition: 1.5s;
+            &:hover{
+                transform:rotate(360deg) ;
+            transition: 1.5s;
+            }
+        }
+        }
 	h3
 	{
 		margin: 0;
 		margin-left: 0.5px;
-		margin-bottom: 3px;
+        margin-bottom: 3px;
+        padding-top: 10px;
+        padding-left: 10px;
 	}
 
 	p
 	{
+        padding-bottom: 10px;
 		margin: 0;
 		font-weight: 300;
-		font-size: 15.5px;
-        padding-right: 5px;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        font-size: 15.5px;
+        padding-left: 10px;
+       
 	}
 
 	span
 	{
-		font-weight: bold;
-		padding-right: 10px;
+        font-weight: bold;
+        
 	}
 
 }
+
+
+.P2--section1--price
+{
+    display: flex;
+    align-items: flex-end;
+    span{
+        margin-bottom: 10px;
+    }
+}
+
+
 
 .P2--section1--menu_a{
     animation-name: menu;
@@ -406,11 +445,6 @@ footer
 
 }
 
-.P2--section1--price
-{
-	display: flex;
-	justify-content: space-between;
-}
 
 .form--btn{
     text-align: center;
