@@ -451,6 +451,7 @@ footer {
   position: absolute;
   right: 0px;
   background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
@@ -459,13 +460,15 @@ footer {
 }
 
 .empty-heart {
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 1px #f2f2f2;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: black;
 }
 
 .Accueilsection3--heartcontain:hover .empty-heart {
   background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -473,6 +476,7 @@ footer {
 .heartcontainer:hover .empty-heart {
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
