@@ -16,7 +16,8 @@ body
 
 .container
 {  
-    box-sizing: border-box;
+	box-sizing: border-box;
+	
 }
 
 /*En-tête*/
@@ -100,6 +101,11 @@ header
 	{
 		margin-left: 0;
 	}
+	.Accueilsection2--option:hover{
+		background-color:#f5ecff;
+		border-top: 10px solid #f5ecff;
+    	border-bottom: 10px solid #f5ecff;
+	}
 
 	.Accueilsection2--option
 	{
@@ -112,8 +118,10 @@ header
 		border-top: 10px #f2f2f2 solid;
 		border-bottom: 10px #f2f2f2 solid;
 		box-shadow: 0 3px 10px  #dbdbdb;
+		height: 40px;
 		p
 		{
+			margin-top: 10px;
 			font-weight: 500;
 		}
 
@@ -122,29 +130,31 @@ header
 	h6
 	{
 		color: white;
+		margin-right: 20px;
 		background-color: $primarycolor;
 		border-radius: 100%;
 		padding-left: 8px;
 		padding-right: 8px;
-		padding-top: 5px;
-		padding-bottom: 5px;
-		position: absolute;
-		left: 15px;
-		margin-top: 15px;
+		padding-top: 6px;
+		padding-bottom: 17px;
+		margin-top: 10px;
+		margin-left:- 40px;
 	}
 }
 
 .fa-mobile-alt
 {
 	color: grey;
-	padding-right:28px ;
+	padding-right:25px ;
+	margin-left: 5px;
 	font-size: large;
 }
 
 .fa-bars
 {
 	color: grey;
-	padding-right:25px ;
+	padding-right:25px;
+	margin-left: 3px;
 	font-size: large;
 }
 
@@ -177,8 +187,9 @@ header
 	border:0 #ffffff solid;
 	background-color: white;
     border-radius: 15px ;
-	height: 240px;
-	margin-bottom: 15px;
+	height: 225px;
+	margin-top: 35px;
+	margin-bottom: 35px;
 	box-shadow: 0 3px 10px  #dbdbdb;
 	a
 	{
@@ -188,23 +199,35 @@ header
 }
 
 .Accueilsection3-texte
-{
-	h3,p
+{margin-top: 30px;
+	h3
 	{
 		margin:0;
-		margin-left: 10px;
+		margin-left: 15px;
+		margin-top: -30px;
 	}
 
 	p
-	{
+	{margin:0;
+		margin-left: 15px;
 		font-size: 17.5px;
+		
+	}
+	.Accueilsection3--heartcontainer{
+		position: absolute; right: 40px;
+		margin-top: 3px;
+		.fa-heart{
+			font-size: x-large;
+		}
 	}
 }
 
 .Accueilsection3--Nouveau
 {
-	position: absolute;
-	right:33px;
+	width: 50px;
+	margin-left: 245px;
+	position: relative;
+	margin-bottom: -45px;
 	background-color: $tertiarycolor;
 	border-radius: 2px;
 	padding: 7px 13px;
@@ -213,21 +236,6 @@ header
 	font-weight: 500;
 }
 
-.fa-heart
-{
-	position: absolute;
-	right: 50px;
-	font-size: x-large;
-    margin-top: 5px;
-    -webkit-text-stroke: 1px white;
-&:hover{
-    background: linear-gradient(
-        to bottom,
-        $primarycolor,
-        $secondarycolor
-    );
-}
-}
 
 /* Footer */
 footer
@@ -313,19 +321,22 @@ footer
     z-index:2;
     
 	.P2--section1--restaurantname
-	{   
+	{  
         justify-content: space-between;
         font-family:'Shrikhand';
         font-size: 28px;
 		margin-left: 18px;
         padding-top: 30px;
-        .fa-heart{
+        
+	}
+.heartcontainer{
+	position: absolute;top: 30px;
+margin-left: 315px;
+.fa-heart{
             font-size: x-large;
             margin-top: 8px;
-            position: absolute;right: 40px;
         }
-	}
-
+}
 	.P2--section1--titlemenu
 	{
 		border-bottom: 3px #99E2D0 solid;
@@ -345,7 +356,8 @@ footer
 	background-color: #ffffff;
 	border-radius: 15px;
     box-shadow: 0 3px 10px  #dbdbdb;
-    justify-content: space-between;
+	justify-content: space-between;
+	width: 348px;
     /*Validation*/
 
 		
@@ -362,13 +374,14 @@ footer
         }
 	
 	/*Texte du menu*/
+	.P2--section1--menu{
 	h3
 	{
 		margin: 0;
 		margin-left: 0.5px;
         margin-bottom: 3px;
         padding-top: 10px;
-        padding-left: 10px;
+		padding-left: 10px;
 	}
 
 	p
@@ -377,7 +390,7 @@ footer
 		margin: 0;
 		font-weight: 300;
         font-size: 15.5px;
-        padding-left: 10px;
+		padding-left: 10px;
        
 	}
 
@@ -387,23 +400,38 @@ footer
 		margin-right: 10px;
         
 	}
+}
+
+.P2--section1--menu:hover h3{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 200px;
+}
+.P2--section1--menu:hover p{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 200px;
+}
 
 	.P2--section1--menu:hover .P2--section1--menu_check{
 			
 		background-color: $tertiarycolor;
 		height: 100%;
-		margin-right: -10px;
 		padding: 25px;
 		padding-top: 0;
 		padding-bottom: 0;
 		border-bottom-right-radius: 15px;
 		border-top-right-radius: 15px;
-		transform:width(1px) ;
-		transition-duration: 1s;
-	}
+		transition: 1s;
+		opacity: 1;
+		
+}
+	
 	.P2--section1--menu:hover .fa-check-circle{
 			transform:rotate(360deg) ;
-		transition: 0.5s;
+		transition: 1s;
 		}
 
 .P2--section1--price
@@ -469,5 +497,59 @@ footer
         box-shadow: 0 3px 10px  #9b9b9b;
         transition-duration: 0.6s;
     }
+
+}
+
+
+  
+  .full-heart{
+	position:absolute;
+	right: 0px;
+	background: linear-gradient(#FF79DA, #9356DC);
+	background-clip:text ;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	opacity:0;
+	transform: scale(1);
+	transition:.3s ease;
+  }
+  
+  .empty-heart{
+	-webkit-text-stroke: 1px white;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: black;
+  }
+  
+.Accueilsection3--heartcontain:hover .empty-heart{
+	background: linear-gradient( #9356DC,#FF79DA);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.heartcontainer:hover .empty-heart{
+	background: linear-gradient( #9356DC,#FF79DA);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+.full-heart:hover{
+	opacity:1;
+	transform: scale(1);
+	animation-name: heart;
+	animation: heart 3s;
+	
+}
+@keyframes heart {
+
+    from {
+	   height: 0%;
+    }
+     to {
+		height: 100%;
+     }
 
 }
