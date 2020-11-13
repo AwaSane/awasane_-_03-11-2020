@@ -4,10 +4,6 @@
 
 /*Body*/
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 3977acc... animation de l'icône check
 body
 {font-family: 'Roboto', sans-serif;
 	flex-wrap: wrap;
@@ -350,38 +346,6 @@ footer
 	border-radius: 15px;
     box-shadow: 0 3px 10px  #dbdbdb;
     justify-content: space-between;
-<<<<<<< HEAD
-    
-    .P2--section1--menu_check{
-        &:hover{
-            background-color: $tertiarycolor;
-            height: 100%;
-            margin-right: -3px;
-            padding: 20px;
-            padding-top: 0;
-            padding-bottom: 0;
-            border-bottom-right-radius: 15px;
-            border-top-right-radius: 15px;
-        }
-        .fa-check-circle{
-            background-color: transparent;
-            margin: 10px;
-            
-            text-align: center;
-            align-items: center;
-            margin-top: 25px;
-            color: white;
-            font-size: large;
-            transition: transform 400ms ease-in-out;
-            transform: rotate(0) ;
-             transition: 1.5s;
-            &:hover{
-                transform:rotate(360deg) ;
-            transition: 1.5s;
-            }
-        }
-        }
-=======
     /*Validation*/
 
 		
@@ -398,7 +362,6 @@ footer
         }
 	
 	/*Texte du menu*/
->>>>>>> 3977acc... animation de l'icône check
 	h3
 	{
 		margin: 0;
@@ -420,12 +383,8 @@ footer
 
 	span
 	{
-<<<<<<< HEAD
-        font-weight: bold;
-=======
 		font-weight: bold;
 		margin-right: 10px;
->>>>>>> 3977acc... animation de l'icône check
         
 	}
 
@@ -456,21 +415,7 @@ footer
     }
 }
 
-<<<<<<< HEAD
-
-.P2--section1--price
-{
-    display: flex;
-    align-items: flex-end;
-    span{
-        margin-bottom: 10px;
-    }
-}
-
-
-=======
 /*Apparition progessive du menu*/
->>>>>>> 3977acc... animation de l'icône check
 
 .P2--section1--menu_a{
     animation-name: menu;
@@ -502,11 +447,7 @@ footer
 
 }
 
-<<<<<<< HEAD
-
-=======
 /*bouton page 2*/
->>>>>>> 3977acc... animation de l'icône check
 .form--btn{
     text-align: center;
 }
