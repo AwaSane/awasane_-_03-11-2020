@@ -4,7 +4,10 @@
 
 /*Body*/
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3977acc... animation de l'icône check
 body
 {font-family: 'Roboto', sans-serif;
 	flex-wrap: wrap;
@@ -270,7 +273,7 @@ footer
 	width: 100%;
 	box-sizing: border-box;
 }
-
+/*header*/
 .headerP2
 {
 	display: flex;
@@ -294,7 +297,7 @@ footer
 
 	}
 }
-
+/*image page 2*/
 .P2--MenilmontantP2
 {
 	width: 100%;
@@ -303,6 +306,7 @@ footer
     z-index:1;
 }
 
+/*Menu du restaurant*/
 .P2--section1
 {
 	background-color: #f2f2f2;
@@ -346,6 +350,7 @@ footer
 	border-radius: 15px;
     box-shadow: 0 3px 10px  #dbdbdb;
     justify-content: space-between;
+<<<<<<< HEAD
     
     .P2--section1--menu_check{
         &:hover{
@@ -376,6 +381,24 @@ footer
             }
         }
         }
+=======
+    /*Validation*/
+
+		
+		}
+        .fa-check-circle{
+			margin-top: 25px;
+            color: white;
+            font-size: large;
+            transition: transform 400ms ease-in-out;
+            &:hover{
+                transform:rotate(360deg) ;
+            transition: 0.5s;
+            }
+        }
+	
+	/*Texte du menu*/
+>>>>>>> 3977acc... animation de l'icône check
 	h3
 	{
 		margin: 0;
@@ -397,12 +420,43 @@ footer
 
 	span
 	{
+<<<<<<< HEAD
         font-weight: bold;
+=======
+		font-weight: bold;
+		margin-right: 10px;
+>>>>>>> 3977acc... animation de l'icône check
         
 	}
 
+	.P2--section1--menu:hover .P2--section1--menu_check{
+			
+		background-color: $tertiarycolor;
+		height: 100%;
+		margin-right: -10px;
+		padding: 25px;
+		padding-top: 0;
+		padding-bottom: 0;
+		border-bottom-right-radius: 15px;
+		border-top-right-radius: 15px;
+		transform:width(1px) ;
+		transition-duration: 1s;
+	}
+	.P2--section1--menu:hover .fa-check-circle{
+			transform:rotate(360deg) ;
+		transition: 0.5s;
+		}
+
+.P2--section1--price
+{
+    display: flex;
+    align-items: flex-end;
+    span{
+        margin-bottom: 10px;
+    }
 }
 
+<<<<<<< HEAD
 
 .P2--section1--price
 {
@@ -414,6 +468,9 @@ footer
 }
 
 
+=======
+/*Apparition progessive du menu*/
+>>>>>>> 3977acc... animation de l'icône check
 
 .P2--section1--menu_a{
     animation-name: menu;
@@ -445,7 +502,11 @@ footer
 
 }
 
+<<<<<<< HEAD
 
+=======
+/*bouton page 2*/
+>>>>>>> 3977acc... animation de l'icône check
 .form--btn{
     text-align: center;
 }
