@@ -1,10 +1,4 @@
 @charset "UTF-8";
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
 /*Variables*/
 /*Body*/
 body {
@@ -273,6 +267,7 @@ footer {
   -ms-flex-align: center;
   align-items: center;
   padding: 25px;
+  padding-top: 15px;
   padding-bottom: 15px;
 }
 .headerP2 .fa-arrow-left {
@@ -527,8 +522,8 @@ footer {
 .full-heart {
   position: absolute;
   right: 0px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: -o-linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
@@ -550,8 +545,8 @@ footer {
 }
 
 .Accueilsection3--heartcontain:hover .empty-heart {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: -o-linear-gradient(#9356DC, #FF79DA);
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
@@ -559,8 +554,8 @@ footer {
 }
 
 .heartcontainer:hover .empty-heart {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: -o-linear-gradient(#9356DC, #FF79DA);
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;
@@ -592,6 +587,72 @@ footer {
   }
   to {
     height: 100%;
+  }
+}
+.spinner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 5px #9356DC solid;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-top-color: white;
+  -webkit-animation: spinner 1s 2.5;
+  animation: spinner 1s 2.5;
+  opacity: 0;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+.loadingspinner {
+  position: absolute;
+  height: 0;
+  -webkit-animation-name: loadingspinner;
+  animation-name: loadingspinner;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes loadingspinner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loadingspinner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
