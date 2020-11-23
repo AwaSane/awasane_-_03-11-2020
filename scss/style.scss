@@ -258,11 +258,16 @@ footer
     padding-top: 25px;
 	padding-left: 25px;
 	padding-bottom: 25px;
+	
 }
 
 .footeritems
 {
 	color: #ffffff;
+	a{
+	text-decoration: none;
+	color: white;
+	}
 }
 
 .footer--logo

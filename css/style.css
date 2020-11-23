@@ -233,6 +233,10 @@ footer {
 .footeritems {
   color: #ffffff;
 }
+.footeritems a {
+  text-decoration: none;
+  color: white;
+}
 
 .footer--logo {
   font-family: "Shrikhand";
