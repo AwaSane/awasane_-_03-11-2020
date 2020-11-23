@@ -89,16 +89,16 @@ header
 	color: white;
     font-weight: 600;
     cursor: pointer;
-    -webkit-transition-duration: 0.6s;
-         -o-transition-duration: 0.6s;
-            transition-duration: 0.6s;
+    -webkit-transition-duration: 0.5s;
+         -o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
     &:hover{
-        opacity: 0.90;
-        -webkit-box-shadow: 0 3px 10px  #9b9b9b;
-                box-shadow: 0 3px 10px  #9b9b9b;
-        -webkit-transition-duration: 0.6s;
-             -o-transition-duration: 0.6s;
-                transition-duration: 0.6s;
+        opacity: 0.85;
+        -webkit-box-shadow: 0 5px 12px  #9b9b9b;
+                box-shadow: 0 5px 12px  #9b9b9b;
+        -webkit-transition-duration: 0.5s;
+             -o-transition-duration: 0.5s;
+                transition-duration: 0.5s;
     }
 }
 
@@ -148,7 +148,7 @@ header
 		border-radius: 100%;
 		padding-left: 8px;
 		padding-right: 8px;
-		padding-top: 6px;
+		padding-top: 4.5px;
 		padding-bottom: 17px;
 		margin-top: 10px;
 		margin-left:- 40px;
@@ -314,6 +314,7 @@ footer
 		margin-right: 60px;
 		font-size: x-large;
 		color:  #303030;
+		text-decoration: none;
 	}
 
 	.header--logop2
